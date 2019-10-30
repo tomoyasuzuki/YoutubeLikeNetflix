@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C22369D179008AB6AA /* AppDelegate.swift */; };
+		57F996C52369D179008AB6AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C42369D179008AB6AA /* SceneDelegate.swift */; };
+		57F996C72369D179008AB6AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C62369D179008AB6AA /* ViewController.swift */; };
+		57F996CA2369D179008AB6AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F996C82369D179008AB6AA /* Main.storyboard */; };
+		57F996CC2369D17B008AB6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F996CB2369D17B008AB6AA /* Assets.xcassets */; };
+		57F996CF2369D17B008AB6AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F996CD2369D17B008AB6AA /* LaunchScreen.storyboard */; };
+		57F996DA2369D17B008AB6AA /* YoutubeLikeNetflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996D92369D17B008AB6AA /* YoutubeLikeNetflixTests.swift */; };
+		57F996E52369D17B008AB6AA /* YoutubeLikeNetflixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996E42369D17B008AB6AA /* YoutubeLikeNetflixUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57F996D62369D17B008AB6AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57F996B72369D179008AB6AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57F996BE2369D179008AB6AA;
+			remoteInfo = YoutubeLikeNetflix;
+		};
+		57F996E12369D17B008AB6AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57F996B72369D179008AB6AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57F996BE2369D179008AB6AA;
+			remoteInfo = YoutubeLikeNetflix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57F996BF2369D179008AB6AA /* YoutubeLikeNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeLikeNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F996C22369D179008AB6AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57F996C42369D179008AB6AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		57F996C62369D179008AB6AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57F996C92369D179008AB6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57F996CB2369D17B008AB6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57F996CE2369D17B008AB6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57F996D02369D17B008AB6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57F996D52369D17B008AB6AA /* YoutubeLikeNetflixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoutubeLikeNetflixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F996D92369D17B008AB6AA /* YoutubeLikeNetflixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeLikeNetflixTests.swift; sourceTree = "<group>"; };
+		57F996DB2369D17B008AB6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57F996E02369D17B008AB6AA /* YoutubeLikeNetflixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoutubeLikeNetflixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F996E42369D17B008AB6AA /* YoutubeLikeNetflixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeLikeNetflixUITests.swift; sourceTree = "<group>"; };
+		57F996E62369D17B008AB6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57F996BC2369D179008AB6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F996D22369D17B008AB6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F996DD2369D17B008AB6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57F996B62369D179008AB6AA = {
+			isa = PBXGroup;
+			children = (
+				57F996C12369D179008AB6AA /* YoutubeLikeNetflix */,
+				57F996D82369D17B008AB6AA /* YoutubeLikeNetflixTests */,
+				57F996E32369D17B008AB6AA /* YoutubeLikeNetflixUITests */,
+				57F996C02369D179008AB6AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57F996C02369D179008AB6AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57F996BF2369D179008AB6AA /* YoutubeLikeNetflix.app */,
+				57F996D52369D17B008AB6AA /* YoutubeLikeNetflixTests.xctest */,
+				57F996E02369D17B008AB6AA /* YoutubeLikeNetflixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57F996C12369D179008AB6AA /* YoutubeLikeNetflix */ = {
+			isa = PBXGroup;
+			children = (
+				57F996C22369D179008AB6AA /* AppDelegate.swift */,
+				57F996C42369D179008AB6AA /* SceneDelegate.swift */,
+				57F996C62369D179008AB6AA /* ViewController.swift */,
+				57F996C82369D179008AB6AA /* Main.storyboard */,
+				57F996CB2369D17B008AB6AA /* Assets.xcassets */,
+				57F996CD2369D17B008AB6AA /* LaunchScreen.storyboard */,
+				57F996D02369D17B008AB6AA /* Info.plist */,
+			);
+			path = YoutubeLikeNetflix;
+			sourceTree = "<group>";
+		};
+		57F996D82369D17B008AB6AA /* YoutubeLikeNetflixTests */ = {
+			isa = PBXGroup;
+			children = (
+				57F996D92369D17B008AB6AA /* YoutubeLikeNetflixTests.swift */,
+				57F996DB2369D17B008AB6AA /* Info.plist */,
+			);
+			path = YoutubeLikeNetflixTests;
+			sourceTree = "<group>";
+		};
+		57F996E32369D17B008AB6AA /* YoutubeLikeNetflixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57F996E42369D17B008AB6AA /* YoutubeLikeNetflixUITests.swift */,
+				57F996E62369D17B008AB6AA /* Info.plist */,
+			);
+			path = YoutubeLikeNetflixUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57F996BE2369D179008AB6AA /* YoutubeLikeNetflix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F996E92369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflix" */;
+			buildPhases = (
+				57F996BB2369D179008AB6AA /* Sources */,
+				57F996BC2369D179008AB6AA /* Frameworks */,
+				57F996BD2369D179008AB6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoutubeLikeNetflix;
+			productName = YoutubeLikeNetflix;
+			productReference = 57F996BF2369D179008AB6AA /* YoutubeLikeNetflix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57F996D42369D17B008AB6AA /* YoutubeLikeNetflixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F996EC2369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflixTests" */;
+			buildPhases = (
+				57F996D12369D17B008AB6AA /* Sources */,
+				57F996D22369D17B008AB6AA /* Frameworks */,
+				57F996D32369D17B008AB6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57F996D72369D17B008AB6AA /* PBXTargetDependency */,
+			);
+			name = YoutubeLikeNetflixTests;
+			productName = YoutubeLikeNetflixTests;
+			productReference = 57F996D52369D17B008AB6AA /* YoutubeLikeNetflixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57F996DF2369D17B008AB6AA /* YoutubeLikeNetflixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F996EF2369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflixUITests" */;
+			buildPhases = (
+				57F996DC2369D17B008AB6AA /* Sources */,
+				57F996DD2369D17B008AB6AA /* Frameworks */,
+				57F996DE2369D17B008AB6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57F996E22369D17B008AB6AA /* PBXTargetDependency */,
+			);
+			name = YoutubeLikeNetflixUITests;
+			productName = YoutubeLikeNetflixUITests;
+			productReference = 57F996E02369D17B008AB6AA /* YoutubeLikeNetflixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57F996B72369D179008AB6AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = tomoya.suzuki;
+				TargetAttributes = {
+					57F996BE2369D179008AB6AA = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					57F996D42369D17B008AB6AA = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 57F996BE2369D179008AB6AA;
+					};
+					57F996DF2369D17B008AB6AA = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 57F996BE2369D179008AB6AA;
+					};
+				};
+			};
+			buildConfigurationList = 57F996BA2369D179008AB6AA /* Build configuration list for PBXProject "YoutubeLikeNetflix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57F996B62369D179008AB6AA;
+			productRefGroup = 57F996C02369D179008AB6AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57F996BE2369D179008AB6AA /* YoutubeLikeNetflix */,
+				57F996D42369D17B008AB6AA /* YoutubeLikeNetflixTests */,
+				57F996DF2369D17B008AB6AA /* YoutubeLikeNetflixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57F996BD2369D179008AB6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F996CF2369D17B008AB6AA /* LaunchScreen.storyboard in Resources */,
+				57F996CC2369D17B008AB6AA /* Assets.xcassets in Resources */,
+				57F996CA2369D179008AB6AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F996D32369D17B008AB6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F996DE2369D17B008AB6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57F996BB2369D179008AB6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F996C72369D179008AB6AA /* ViewController.swift in Sources */,
+				57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */,
+				57F996C52369D179008AB6AA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F996D12369D17B008AB6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F996DA2369D17B008AB6AA /* YoutubeLikeNetflixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F996DC2369D17B008AB6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F996E52369D17B008AB6AA /* YoutubeLikeNetflixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57F996D72369D17B008AB6AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57F996BE2369D179008AB6AA /* YoutubeLikeNetflix */;
+			targetProxy = 57F996D62369D17B008AB6AA /* PBXContainerItemProxy */;
+		};
+		57F996E22369D17B008AB6AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57F996BE2369D179008AB6AA /* YoutubeLikeNetflix */;
+			targetProxy = 57F996E12369D17B008AB6AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57F996C82369D179008AB6AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57F996C92369D179008AB6AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57F996CD2369D17B008AB6AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57F996CE2369D17B008AB6AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57F996E72369D17B008AB6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57F996E82369D17B008AB6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57F996EA2369D17B008AB6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9D57Q492;
+				INFOPLIST_FILE = YoutubeLikeNetflix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.tomoya.suzuki.YoutubeLikeNetflix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57F996EB2369D17B008AB6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9D57Q492;
+				INFOPLIST_FILE = YoutubeLikeNetflix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.tomoya.suzuki.YoutubeLikeNetflix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57F996ED2369D17B008AB6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9D57Q492;
+				INFOPLIST_FILE = YoutubeLikeNetflixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.tomoya.suzuki.YoutubeLikeNetflixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoutubeLikeNetflix.app/YoutubeLikeNetflix";
+			};
+			name = Debug;
+		};
+		57F996EE2369D17B008AB6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9D57Q492;
+				INFOPLIST_FILE = YoutubeLikeNetflixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.tomoya.suzuki.YoutubeLikeNetflixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoutubeLikeNetflix.app/YoutubeLikeNetflix";
+			};
+			name = Release;
+		};
+		57F996F02369D17B008AB6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9D57Q492;
+				INFOPLIST_FILE = YoutubeLikeNetflixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.tomoya.suzuki.YoutubeLikeNetflixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YoutubeLikeNetflix;
+			};
+			name = Debug;
+		};
+		57F996F12369D17B008AB6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9D57Q492;
+				INFOPLIST_FILE = YoutubeLikeNetflixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.tomoya.suzuki.YoutubeLikeNetflixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YoutubeLikeNetflix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57F996BA2369D179008AB6AA /* Build configuration list for PBXProject "YoutubeLikeNetflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F996E72369D17B008AB6AA /* Debug */,
+				57F996E82369D17B008AB6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F996E92369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F996EA2369D17B008AB6AA /* Debug */,
+				57F996EB2369D17B008AB6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F996EC2369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F996ED2369D17B008AB6AA /* Debug */,
+				57F996EE2369D17B008AB6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F996EF2369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F996F02369D17B008AB6AA /* Debug */,
+				57F996F12369D17B008AB6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57F996B72369D179008AB6AA /* Project object */;
+}
