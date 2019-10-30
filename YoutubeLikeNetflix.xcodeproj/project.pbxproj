@@ -109,14 +109,9 @@
 		57F996C12369D179008AB6AA /* YoutubeLikeNetflix */ = {
 			isa = PBXGroup;
 			children = (
+				57F996FC2369EE96008AB6AA /* View */,
 				57F996C22369D179008AB6AA /* AppDelegate.swift */,
 				57F996C42369D179008AB6AA /* SceneDelegate.swift */,
-				57F996C62369D179008AB6AA /* HomeViewController.swift */,
-				57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */,
-				57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */,
-				57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */,
-				57F996F22369E0E4008AB6AA /* VideoTableViewCell.swift */,
-				57F996F32369E0E4008AB6AA /* VideoTableViewCell.xib */,
 				57F996C82369D179008AB6AA /* Main.storyboard */,
 				57F996CB2369D17B008AB6AA /* Assets.xcassets */,
 				57F996CD2369D17B008AB6AA /* LaunchScreen.storyboard */,
@@ -141,6 +136,27 @@
 				57F996E62369D17B008AB6AA /* Info.plist */,
 			);
 			path = YoutubeLikeNetflixUITests;
+			sourceTree = "<group>";
+		};
+		57F996FC2369EE96008AB6AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57F996FD2369EEBB008AB6AA /* Cell */,
+				57F996C62369D179008AB6AA /* HomeViewController.swift */,
+				57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */,
+				57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */,
+				57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57F996FD2369EEBB008AB6AA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				57F996F22369E0E4008AB6AA /* VideoTableViewCell.swift */,
+				57F996F32369E0E4008AB6AA /* VideoTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
