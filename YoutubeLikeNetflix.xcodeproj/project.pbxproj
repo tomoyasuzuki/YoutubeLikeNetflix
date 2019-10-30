@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C22369D179008AB6AA /* AppDelegate.swift */; };
 		57F996C52369D179008AB6AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C42369D179008AB6AA /* SceneDelegate.swift */; };
-		57F996C72369D179008AB6AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C62369D179008AB6AA /* ViewController.swift */; };
+		57F996C72369D179008AB6AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C62369D179008AB6AA /* HomeViewController.swift */; };
 		57F996CA2369D179008AB6AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F996C82369D179008AB6AA /* Main.storyboard */; };
 		57F996CC2369D17B008AB6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F996CB2369D17B008AB6AA /* Assets.xcassets */; };
 		57F996CF2369D17B008AB6AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F996CD2369D17B008AB6AA /* LaunchScreen.storyboard */; };
 		57F996DA2369D17B008AB6AA /* YoutubeLikeNetflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996D92369D17B008AB6AA /* YoutubeLikeNetflixTests.swift */; };
 		57F996E52369D17B008AB6AA /* YoutubeLikeNetflixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996E42369D17B008AB6AA /* YoutubeLikeNetflixUITests.swift */; };
+		57F996F42369E0E4008AB6AA /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996F22369E0E4008AB6AA /* VideoTableViewCell.swift */; };
+		57F996F52369E0E4008AB6AA /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57F996F32369E0E4008AB6AA /* VideoTableViewCell.xib */; };
+		57F996F72369E6C7008AB6AA /* VideoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */; };
+		57F996F92369E728008AB6AA /* CategoryVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */; };
+		57F996FB2369E757008AB6AA /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,7 @@
 		57F996BF2369D179008AB6AA /* YoutubeLikeNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeLikeNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F996C22369D179008AB6AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57F996C42369D179008AB6AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57F996C62369D179008AB6AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57F996C62369D179008AB6AA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		57F996C92369D179008AB6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57F996CB2369D17B008AB6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57F996CE2369D17B008AB6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		57F996E02369D17B008AB6AA /* YoutubeLikeNetflixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoutubeLikeNetflixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F996E42369D17B008AB6AA /* YoutubeLikeNetflixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeLikeNetflixUITests.swift; sourceTree = "<group>"; };
 		57F996E62369D17B008AB6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57F996F22369E0E4008AB6AA /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		57F996F32369E0E4008AB6AA /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSearchViewController.swift; sourceTree = "<group>"; };
+		57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVideoListViewController.swift; sourceTree = "<group>"; };
+		57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +111,12 @@
 			children = (
 				57F996C22369D179008AB6AA /* AppDelegate.swift */,
 				57F996C42369D179008AB6AA /* SceneDelegate.swift */,
-				57F996C62369D179008AB6AA /* ViewController.swift */,
+				57F996C62369D179008AB6AA /* HomeViewController.swift */,
+				57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */,
+				57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */,
+				57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */,
+				57F996F22369E0E4008AB6AA /* VideoTableViewCell.swift */,
+				57F996F32369E0E4008AB6AA /* VideoTableViewCell.xib */,
 				57F996C82369D179008AB6AA /* Main.storyboard */,
 				57F996CB2369D17B008AB6AA /* Assets.xcassets */,
 				57F996CD2369D17B008AB6AA /* LaunchScreen.storyboard */,
@@ -233,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57F996CF2369D17B008AB6AA /* LaunchScreen.storyboard in Resources */,
+				57F996F52369E0E4008AB6AA /* VideoTableViewCell.xib in Resources */,
 				57F996CC2369D17B008AB6AA /* Assets.xcassets in Resources */,
 				57F996CA2369D179008AB6AA /* Main.storyboard in Resources */,
 			);
@@ -259,7 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57F996C72369D179008AB6AA /* ViewController.swift in Sources */,
+				57F996F72369E6C7008AB6AA /* VideoSearchViewController.swift in Sources */,
+				57F996FB2369E757008AB6AA /* VideoDetailViewController.swift in Sources */,
+				57F996C72369D179008AB6AA /* HomeViewController.swift in Sources */,
+				57F996F92369E728008AB6AA /* CategoryVideoListViewController.swift in Sources */,
+				57F996F42369E0E4008AB6AA /* VideoTableViewCell.swift in Sources */,
 				57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */,
 				57F996C52369D179008AB6AA /* SceneDelegate.swift in Sources */,
 			);
