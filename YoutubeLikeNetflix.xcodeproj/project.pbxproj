@@ -20,6 +20,8 @@
 		57F996F72369E6C7008AB6AA /* VideoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */; };
 		57F996F92369E728008AB6AA /* CategoryVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */; };
 		57F996FB2369E757008AB6AA /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */; };
+		57F99701236A8195008AB6AA /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F99700236A8195008AB6AA /* CollectionTableViewCell.swift */; };
+		57F99703236AB9CB008AB6AA /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F99702236AB9CB008AB6AA /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSearchViewController.swift; sourceTree = "<group>"; };
 		57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVideoListViewController.swift; sourceTree = "<group>"; };
 		57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
+		57F99700236A8195008AB6AA /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		57F99702236AB9CB008AB6AA /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 			children = (
 				57F996F22369E0E4008AB6AA /* VideoTableViewCell.swift */,
 				57F996F32369E0E4008AB6AA /* VideoTableViewCell.xib */,
+				57F99700236A8195008AB6AA /* CollectionTableViewCell.swift */,
+				57F99702236AB9CB008AB6AA /* VideoView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -297,6 +303,8 @@
 				57F996F92369E728008AB6AA /* CategoryVideoListViewController.swift in Sources */,
 				57F996F42369E0E4008AB6AA /* VideoTableViewCell.swift in Sources */,
 				57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */,
+				57F99703236AB9CB008AB6AA /* VideoView.swift in Sources */,
+				57F99701236A8195008AB6AA /* CollectionTableViewCell.swift in Sources */,
 				57F996C52369D179008AB6AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
