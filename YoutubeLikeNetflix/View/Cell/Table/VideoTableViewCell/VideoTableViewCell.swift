@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import WebKit
 
-class VideoTableViewCell: UITableViewCell {
-
+final class VideoTableViewCell: UITableViewCell {
+    @IBOutlet weak var videoWebView: WKWebView!
+    @IBOutlet weak var videoStartButton: UIButton!
+    @IBOutlet weak var channelImageView: UIImageView!
+    @IBOutlet weak var videoTitleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        channelImageView.layer.cornerRadius = channelImageView.bounds.height / 2
+        channelImageView.clipsToBounds = true
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,5 +29,4 @@ class VideoTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
