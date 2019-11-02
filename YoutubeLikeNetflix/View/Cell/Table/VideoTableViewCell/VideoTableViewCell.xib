@@ -38,7 +38,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="width" constant="320" id="1Lw-a9-GEB"/>
                             <constraint firstItem="DA8-zC-dVc" firstAttribute="leading" secondItem="SJS-cg-aVN" secondAttribute="leading" constant="8" id="ADY-u5-ppx"/>
+                            <constraint firstAttribute="height" constant="109" id="Qmz-JX-WPu"/>
                             <constraint firstItem="DA8-zC-dVc" firstAttribute="top" secondItem="SJS-cg-aVN" secondAttribute="top" constant="16" id="dyl-zr-yl5"/>
                             <constraint firstItem="MWI-8j-vZF" firstAttribute="centerY" secondItem="DA8-zC-dVc" secondAttribute="centerY" id="qR3-Rr-Rma"/>
                             <constraint firstItem="MWI-8j-vZF" firstAttribute="leading" secondItem="DA8-zC-dVc" secondAttribute="trailing" constant="15" id="xGQ-ck-W5a"/>
@@ -48,7 +50,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="172"/>
                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="172" id="Jti-mh-ooN"/>
                             <constraint firstAttribute="width" constant="320" id="NP4-Yk-9HZ"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="rAX-1j-cDG"/>
                             <constraint firstAttribute="height" constant="172" id="w00-wA-JRB"/>
                         </constraints>
                         <wkWebViewConfiguration key="configuration">
@@ -68,13 +72,20 @@
                 <constraints>
                     <constraint firstItem="iq8-7H-iij" firstAttribute="centerY" secondItem="fhe-Yx-PVd" secondAttribute="centerY" id="0Lz-eJ-fHE"/>
                     <constraint firstItem="SJS-cg-aVN" firstAttribute="top" secondItem="fhe-Yx-PVd" secondAttribute="bottom" id="6xU-rw-LLe"/>
+                    <constraint firstItem="SJS-cg-aVN" firstAttribute="top" secondItem="fhe-Yx-PVd" secondAttribute="bottom" id="ArM-T3-zkQ"/>
                     <constraint firstAttribute="trailing" secondItem="SJS-cg-aVN" secondAttribute="trailing" id="DCR-lS-kln"/>
+                    <constraint firstItem="fhe-Yx-PVd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JDj-Yg-MJ5"/>
                     <constraint firstItem="iq8-7H-iij" firstAttribute="centerX" secondItem="fhe-Yx-PVd" secondAttribute="centerX" id="JIf-Ty-d4L"/>
                     <constraint firstAttribute="bottom" secondItem="SJS-cg-aVN" secondAttribute="bottom" id="Odb-gZ-2RA"/>
+                    <constraint firstAttribute="trailing" secondItem="SJS-cg-aVN" secondAttribute="trailing" id="Qd7-AJ-U6A"/>
                     <constraint firstItem="fhe-Yx-PVd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Uwb-Ky-2zM"/>
                     <constraint firstItem="SJS-cg-aVN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hqw-iR-bRS"/>
                     <constraint firstItem="fhe-Yx-PVd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jyc-zD-GQs"/>
+                    <constraint firstItem="SJS-cg-aVN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lYU-8U-Mjn"/>
                     <constraint firstAttribute="trailing" secondItem="fhe-Yx-PVd" secondAttribute="trailing" id="rnU-42-Swd"/>
+                    <constraint firstAttribute="bottom" secondItem="SJS-cg-aVN" secondAttribute="bottom" id="s3T-O2-H6G"/>
+                    <constraint firstAttribute="trailing" secondItem="fhe-Yx-PVd" secondAttribute="trailing" id="uxu-QX-btG"/>
+                    <constraint firstItem="fhe-Yx-PVd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vPP-ay-YO0"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

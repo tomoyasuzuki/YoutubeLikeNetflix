@@ -61,35 +61,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BbJ-Pb-9L1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="103" width="414" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="260" id="aAp-dR-1Lg">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="260"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aAp-dR-1Lg" id="ope-tV-TyC">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="a2O-vD-HGb" id="lo6-Uk-RQt"/>
                                     <outlet property="delegate" destination="a2O-vD-HGb" id="ArW-ea-AwO"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUJ-N5-g5p">
+                                <rect key="frame" x="0.0" y="44" width="414" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXk-Vy-lAK">
+                                        <rect key="frame" x="175" y="15.5" width="64" height="28"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="2Ih-2M-Qsm"/>
+                                    <constraint firstItem="HXk-Vy-lAK" firstAttribute="centerX" secondItem="WUJ-N5-g5p" secondAttribute="centerX" id="TMz-wr-Osl"/>
+                                    <constraint firstItem="HXk-Vy-lAK" firstAttribute="centerY" secondItem="WUJ-N5-g5p" secondAttribute="centerY" id="XhJ-Aj-4EA"/>
+                                    <constraint firstAttribute="width" secondItem="WUJ-N5-g5p" secondAttribute="height" multiplier="414:59" id="us7-Qx-SLB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="WUJ-N5-g5p" firstAttribute="trailing" secondItem="VsB-nf-bGb" secondAttribute="trailing" id="AS0-Zo-hJw"/>
                             <constraint firstItem="BbJ-Pb-9L1" firstAttribute="trailing" secondItem="VsB-nf-bGb" secondAttribute="trailing" id="DbE-k3-RvG"/>
+                            <constraint firstItem="WUJ-N5-g5p" firstAttribute="leading" secondItem="VsB-nf-bGb" secondAttribute="leading" id="QlR-RA-hre"/>
                             <constraint firstItem="BbJ-Pb-9L1" firstAttribute="leading" secondItem="VsB-nf-bGb" secondAttribute="leading" id="SiA-7U-4TO"/>
-                            <constraint firstItem="BbJ-Pb-9L1" firstAttribute="top" secondItem="VsB-nf-bGb" secondAttribute="top" id="gYq-td-oFa"/>
+                            <constraint firstItem="WUJ-N5-g5p" firstAttribute="top" secondItem="VsB-nf-bGb" secondAttribute="top" id="pko-ei-K48"/>
                             <constraint firstItem="BbJ-Pb-9L1" firstAttribute="bottom" secondItem="VsB-nf-bGb" secondAttribute="bottom" id="rp7-IV-RSW"/>
+                            <constraint firstItem="BbJ-Pb-9L1" firstAttribute="top" secondItem="WUJ-N5-g5p" secondAttribute="bottom" id="vyW-Gp-aef"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VsB-nf-bGb"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="3Bs-LU-Bn8"/>
                     <connections>
+                        <outlet property="navigationTitleLabel" destination="HXk-Vy-lAK" id="a2E-0Z-PmL"/>
+                        <outlet property="nsvigationBarView" destination="WUJ-N5-g5p" id="2UK-59-pCJ"/>
                         <outlet property="videoTableView" destination="BbJ-Pb-9L1" id="V8n-0f-AM1"/>
                     </connections>
                 </viewController>
@@ -109,16 +122,6 @@
                                 <rect key="frame" x="0.0" y="87" width="414" height="775"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryVideoCell" id="epu-Xw-RRK">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="epu-Xw-RRK" id="2wp-Kl-DDs">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

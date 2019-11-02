@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D15F038955582395DF3972B /* Pods_YoutubeLikeNetflixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B11FB9F47D1A99B8F0ADDF /* Pods_YoutubeLikeNetflixUITests.framework */; };
+		5760FDB7236C6E8200B30979 /* MockVideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5760FDB6236C6E8200B30979 /* MockVideoItem.swift */; };
 		57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C22369D179008AB6AA /* AppDelegate.swift */; };
 		57F996C52369D179008AB6AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C42369D179008AB6AA /* SceneDelegate.swift */; };
 		57F996C72369D179008AB6AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C62369D179008AB6AA /* HomeViewController.swift */; };
@@ -20,8 +22,13 @@
 		57F996F72369E6C7008AB6AA /* VideoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */; };
 		57F996F92369E728008AB6AA /* CategoryVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */; };
 		57F996FB2369E757008AB6AA /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */; };
-		57F99701236A8195008AB6AA /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F99700236A8195008AB6AA /* CollectionTableViewCell.swift */; };
 		57F99703236AB9CB008AB6AA /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F99702236AB9CB008AB6AA /* VideoView.swift */; };
+		57F9970A236AE406008AB6AA /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F99708236AE406008AB6AA /* VideoCollectionViewCell.swift */; };
+		57F9970B236AE406008AB6AA /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57F99709236AE406008AB6AA /* VideoCollectionViewCell.xib */; };
+		57F9970E236B3034008AB6AA /* VideoCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F9970C236B3034008AB6AA /* VideoCollectionTableViewCell.swift */; };
+		57F9970F236B3034008AB6AA /* VideoCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57F9970D236B3034008AB6AA /* VideoCollectionTableViewCell.xib */; };
+		E34D51C74598FD3FADE97DE2 /* Pods_YoutubeLikeNetflixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A956BB89A362A16FDB71C12C /* Pods_YoutubeLikeNetflixTests.framework */; };
+		E54928EA1CD0FE051020649C /* Pods_YoutubeLikeNetflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2622ABEAFA84394C6BFE69AE /* Pods_YoutubeLikeNetflix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10B11FB9F47D1A99B8F0ADDF /* Pods_YoutubeLikeNetflixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeLikeNetflixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		116F11B14C653B1A7971AB21 /* Pods-YoutubeLikeNetflixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeLikeNetflixTests.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeLikeNetflixTests/Pods-YoutubeLikeNetflixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		132703E439226C8E042C46BD /* Pods-YoutubeLikeNetflixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeLikeNetflixTests.release.xcconfig"; path = "Target Support Files/Pods-YoutubeLikeNetflixTests/Pods-YoutubeLikeNetflixTests.release.xcconfig"; sourceTree = "<group>"; };
+		2622ABEAFA84394C6BFE69AE /* Pods_YoutubeLikeNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeLikeNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5760FDB6236C6E8200B30979 /* MockVideoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVideoItem.swift; sourceTree = "<group>"; };
 		57F996BF2369D179008AB6AA /* YoutubeLikeNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeLikeNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F996C22369D179008AB6AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57F996C42369D179008AB6AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +73,16 @@
 		57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSearchViewController.swift; sourceTree = "<group>"; };
 		57F996F82369E728008AB6AA /* CategoryVideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVideoListViewController.swift; sourceTree = "<group>"; };
 		57F996FA2369E757008AB6AA /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
-		57F99700236A8195008AB6AA /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		57F99702236AB9CB008AB6AA /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		57F99708236AE406008AB6AA /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		57F99709236AE406008AB6AA /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		57F9970C236B3034008AB6AA /* VideoCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		57F9970D236B3034008AB6AA /* VideoCollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		63955F5B99255387C0B718E1 /* Pods-YoutubeLikeNetflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeLikeNetflix.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeLikeNetflix/Pods-YoutubeLikeNetflix.debug.xcconfig"; sourceTree = "<group>"; };
+		927702E39275A1366AC22929 /* Pods-YoutubeLikeNetflixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeLikeNetflixUITests.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeLikeNetflixUITests/Pods-YoutubeLikeNetflixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9627E872D5F4DB4C21027F80 /* Pods-YoutubeLikeNetflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeLikeNetflix.release.xcconfig"; path = "Target Support Files/Pods-YoutubeLikeNetflix/Pods-YoutubeLikeNetflix.release.xcconfig"; sourceTree = "<group>"; };
+		A956BB89A362A16FDB71C12C /* Pods_YoutubeLikeNetflixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeLikeNetflixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B0B13E7B277AA8C7CDED02 /* Pods-YoutubeLikeNetflixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeLikeNetflixUITests.release.xcconfig"; path = "Target Support Files/Pods-YoutubeLikeNetflixUITests/Pods-YoutubeLikeNetflixUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54928EA1CD0FE051020649C /* Pods_YoutubeLikeNetflix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E34D51C74598FD3FADE97DE2 /* Pods_YoutubeLikeNetflixTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +106,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D15F038955582395DF3972B /* Pods_YoutubeLikeNetflixUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370C5D715367CE42C570B6F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2622ABEAFA84394C6BFE69AE /* Pods_YoutubeLikeNetflix.framework */,
+				A956BB89A362A16FDB71C12C /* Pods_YoutubeLikeNetflixTests.framework */,
+				10B11FB9F47D1A99B8F0ADDF /* Pods_YoutubeLikeNetflixUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5157311E608BD5D474F79C79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63955F5B99255387C0B718E1 /* Pods-YoutubeLikeNetflix.debug.xcconfig */,
+				9627E872D5F4DB4C21027F80 /* Pods-YoutubeLikeNetflix.release.xcconfig */,
+				116F11B14C653B1A7971AB21 /* Pods-YoutubeLikeNetflixTests.debug.xcconfig */,
+				132703E439226C8E042C46BD /* Pods-YoutubeLikeNetflixTests.release.xcconfig */,
+				927702E39275A1366AC22929 /* Pods-YoutubeLikeNetflixUITests.debug.xcconfig */,
+				D4B0B13E7B277AA8C7CDED02 /* Pods-YoutubeLikeNetflixUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5760FDB5236C6E6300B30979 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5760FDB6236C6E8200B30979 /* MockVideoItem.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		57F996B62369D179008AB6AA = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +151,8 @@
 				57F996D82369D17B008AB6AA /* YoutubeLikeNetflixTests */,
 				57F996E32369D17B008AB6AA /* YoutubeLikeNetflixUITests */,
 				57F996C02369D179008AB6AA /* Products */,
+				5157311E608BD5D474F79C79 /* Pods */,
+				370C5D715367CE42C570B6F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +169,7 @@
 		57F996C12369D179008AB6AA /* YoutubeLikeNetflix */ = {
 			isa = PBXGroup;
 			children = (
+				5760FDB5236C6E6300B30979 /* Mock */,
 				57F996FC2369EE96008AB6AA /* View */,
 				57F996C22369D179008AB6AA /* AppDelegate.swift */,
 				57F996C42369D179008AB6AA /* SceneDelegate.swift */,
@@ -157,12 +214,55 @@
 		57F996FD2369EEBB008AB6AA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				57F996F22369E0E4008AB6AA /* VideoTableViewCell.swift */,
-				57F996F32369E0E4008AB6AA /* VideoTableViewCell.xib */,
-				57F99700236A8195008AB6AA /* CollectionTableViewCell.swift */,
 				57F99702236AB9CB008AB6AA /* VideoView.swift */,
+				57F99707236AE3CF008AB6AA /* Table */,
+				57F99706236AE3C5008AB6AA /* Collection */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		57F99706236AE3C5008AB6AA /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				57F99712236B3851008AB6AA /* VideoCollectionViewCell */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		57F99707236AE3CF008AB6AA /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				57F99711236B33EC008AB6AA /* VideoCollectionTableViewCell */,
+				57F99710236B33DB008AB6AA /* VideoTableViewCell */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		57F99710236B33DB008AB6AA /* VideoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				57F996F22369E0E4008AB6AA /* VideoTableViewCell.swift */,
+				57F996F32369E0E4008AB6AA /* VideoTableViewCell.xib */,
+			);
+			path = VideoTableViewCell;
+			sourceTree = "<group>";
+		};
+		57F99711236B33EC008AB6AA /* VideoCollectionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				57F9970C236B3034008AB6AA /* VideoCollectionTableViewCell.swift */,
+				57F9970D236B3034008AB6AA /* VideoCollectionTableViewCell.xib */,
+			);
+			path = VideoCollectionTableViewCell;
+			sourceTree = "<group>";
+		};
+		57F99712236B3851008AB6AA /* VideoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				57F99708236AE406008AB6AA /* VideoCollectionViewCell.swift */,
+				57F99709236AE406008AB6AA /* VideoCollectionViewCell.xib */,
+			);
+			path = VideoCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57F996E92369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflix" */;
 			buildPhases = (
+				A011DC3DD357C56638451BBC /* [CP] Check Pods Manifest.lock */,
 				57F996BB2369D179008AB6AA /* Sources */,
 				57F996BC2369D179008AB6AA /* Frameworks */,
 				57F996BD2369D179008AB6AA /* Resources */,
+				5560FA1067B3EC2F43262086 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57F996EC2369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflixTests" */;
 			buildPhases = (
+				B137D2428C0FCA7E4193E059 /* [CP] Check Pods Manifest.lock */,
 				57F996D12369D17B008AB6AA /* Sources */,
 				57F996D22369D17B008AB6AA /* Frameworks */,
 				57F996D32369D17B008AB6AA /* Resources */,
@@ -207,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57F996EF2369D17B008AB6AA /* Build configuration list for PBXNativeTarget "YoutubeLikeNetflixUITests" */;
 			buildPhases = (
+				A7432FCCA20AB8E59DFD35B7 /* [CP] Check Pods Manifest.lock */,
 				57F996DC2369D17B008AB6AA /* Sources */,
 				57F996DD2369D17B008AB6AA /* Frameworks */,
 				57F996DE2369D17B008AB6AA /* Resources */,
@@ -271,7 +375,9 @@
 			files = (
 				57F996CF2369D17B008AB6AA /* LaunchScreen.storyboard in Resources */,
 				57F996F52369E0E4008AB6AA /* VideoTableViewCell.xib in Resources */,
+				57F9970B236AE406008AB6AA /* VideoCollectionViewCell.xib in Resources */,
 				57F996CC2369D17B008AB6AA /* Assets.xcassets in Resources */,
+				57F9970F236B3034008AB6AA /* VideoCollectionTableViewCell.xib in Resources */,
 				57F996CA2369D179008AB6AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,19 +398,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5560FA1067B3EC2F43262086 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoutubeLikeNetflix/Pods-YoutubeLikeNetflix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoutubeLikeNetflix/Pods-YoutubeLikeNetflix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoutubeLikeNetflix/Pods-YoutubeLikeNetflix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A011DC3DD357C56638451BBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoutubeLikeNetflix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7432FCCA20AB8E59DFD35B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoutubeLikeNetflixUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B137D2428C0FCA7E4193E059 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoutubeLikeNetflixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		57F996BB2369D179008AB6AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				57F996F72369E6C7008AB6AA /* VideoSearchViewController.swift in Sources */,
+				5760FDB7236C6E8200B30979 /* MockVideoItem.swift in Sources */,
 				57F996FB2369E757008AB6AA /* VideoDetailViewController.swift in Sources */,
 				57F996C72369D179008AB6AA /* HomeViewController.swift in Sources */,
 				57F996F92369E728008AB6AA /* CategoryVideoListViewController.swift in Sources */,
 				57F996F42369E0E4008AB6AA /* VideoTableViewCell.swift in Sources */,
 				57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */,
 				57F99703236AB9CB008AB6AA /* VideoView.swift in Sources */,
-				57F99701236A8195008AB6AA /* CollectionTableViewCell.swift in Sources */,
+				57F9970E236B3034008AB6AA /* VideoCollectionTableViewCell.swift in Sources */,
+				57F9970A236AE406008AB6AA /* VideoCollectionViewCell.swift in Sources */,
 				57F996C52369D179008AB6AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +670,7 @@
 		};
 		57F996EA2369D17B008AB6AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63955F5B99255387C0B718E1 /* Pods-YoutubeLikeNetflix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +689,7 @@
 		};
 		57F996EB2369D17B008AB6AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9627E872D5F4DB4C21027F80 /* Pods-YoutubeLikeNetflix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +708,7 @@
 		};
 		57F996ED2369D17B008AB6AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116F11B14C653B1A7971AB21 /* Pods-YoutubeLikeNetflixTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +731,7 @@
 		};
 		57F996EE2369D17B008AB6AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132703E439226C8E042C46BD /* Pods-YoutubeLikeNetflixTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +754,7 @@
 		};
 		57F996F02369D17B008AB6AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927702E39275A1366AC22929 /* Pods-YoutubeLikeNetflixUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -576,6 +775,7 @@
 		};
 		57F996F12369D17B008AB6AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4B0B13E7B277AA8C7CDED02 /* Pods-YoutubeLikeNetflixUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
