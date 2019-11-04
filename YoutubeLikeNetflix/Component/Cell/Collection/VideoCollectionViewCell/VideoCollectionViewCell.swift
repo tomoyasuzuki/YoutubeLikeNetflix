@@ -8,9 +8,10 @@
 
 import UIKit
 import WebKit
+import YoutubeKit
 
 class VideoCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var videoWebView: WKWebView!
+    @IBOutlet weak var videothumbnailImageView: UIImageView!
     @IBOutlet weak var videoChannelImageView: UIImageView!
     @IBOutlet weak var mockView: UIView!
     @IBOutlet weak var videoTitleLabel: UILabel!
@@ -28,8 +29,8 @@ class VideoCollectionViewCell: UICollectionViewCell {
 }
 
 extension VideoCollectionViewCell {
-    func setupDatasource(_ videoItem: MockVideoItem) {
-        videoTitleLabel.text = videoItem.title
-        videoChannelImageView.image = videoItem.createrImage
+    func setupDatasource(_ video: Video) {
+        videoTitleLabel.text = video.snippet?.title
+        videoChannelImageView.image = UIImage(named: "mockImage")
     }
 }

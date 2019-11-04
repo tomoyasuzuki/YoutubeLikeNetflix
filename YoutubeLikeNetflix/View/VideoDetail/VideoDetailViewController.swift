@@ -9,10 +9,10 @@
 import UIKit
 
 final class VideoDetailViewController: UIViewController {
-
+    @IBOutlet weak var videoDetailTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        videoDetailTableView.register(UINib(nibName: "VideoTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoTableViewCell")
     }
 }

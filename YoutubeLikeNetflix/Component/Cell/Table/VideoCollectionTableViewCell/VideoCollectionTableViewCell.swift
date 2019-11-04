@@ -15,15 +15,15 @@ final class VideoCollectionTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        videoCollectionView.register(UINib(nibName: "VideoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "VideoCollectionViewCell")
+        videoCollectionView.register(VideoCell.self, forCellWithReuseIdentifier: "VideoCell")
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 242, height: 216)
+        layout.itemSize = CGSize(width: 375, height: 237)
         layout.minimumLineSpacing = 20
         layout.scrollDirection = .horizontal
         videoCollectionView.collectionViewLayout = layout
         
-        videoCollectionView.backgroundColor = .black
+        videoCollectionView.backgroundColor = .white
         videoCollectionView.isScrollEnabled = true
     }
 }

@@ -14,11 +14,13 @@ struct MockVideoItem {
     let createrName: String
     let createrImage: UIImage
     let duration: Double
+    let urlString: String
     
-    init(title: String = "VideoTitle", createrName: String = "CreaterName", createrImage: UIImage = UIImage(named: "mockImage")!, duration: Double = 400) {
+    init(title: String = "VideoTitle", createrName: String = "CreaterName", createrImage: UIImage = UIImage(named: "mockImage")!, duration: Double = 400, urlString: String = "https://hogehoge.com") {
         self.title = title
         self.createrName = createrName
         self.createrImage = createrImage
         self.duration = duration
+        self.urlString = urlString
     }
 }
