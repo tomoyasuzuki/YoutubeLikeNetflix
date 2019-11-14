@@ -35,6 +35,7 @@
 		57217113237D434800F2D02D /* SegmentSearchViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57217112237D434800F2D02D /* SegmentSearchViewModelAssembly.swift */; };
 		57217115237D4E6D00F2D02D /* VideoSearchViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57217114237D4E6D00F2D02D /* VideoSearchViewModelAssembly.swift */; };
 		57217118237D50F100F2D02D /* HomeViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57217117237D50F100F2D02D /* HomeViewModelAssembly.swift */; };
+		5721711B237D52AD00F2D02D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721711A237D52AD00F2D02D /* Constant.swift */; };
 		57C410C5236FFE0100748D16 /* ExReactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C410C4236FFE0100748D16 /* ExReactive.swift */; };
 		57C410D023700AA800748D16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C410CF23700AA800748D16 /* HomeViewModel.swift */; };
 		57C410D323719DEA00748D16 /* VideoThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C410D123719DEA00748D16 /* VideoThumbnailCollectionViewCell.swift */; };
@@ -127,6 +128,7 @@
 		57217112237D434800F2D02D /* SegmentSearchViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentSearchViewModelAssembly.swift; sourceTree = "<group>"; };
 		57217114237D4E6D00F2D02D /* VideoSearchViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSearchViewModelAssembly.swift; sourceTree = "<group>"; };
 		57217117237D50F100F2D02D /* HomeViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelAssembly.swift; sourceTree = "<group>"; };
+		5721711A237D52AD00F2D02D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		57C410C4236FFE0100748D16 /* ExReactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExReactive.swift; sourceTree = "<group>"; };
 		57C410CF23700AA800748D16 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		57C410D123719DEA00748D16 /* VideoThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -371,6 +373,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		57217119237D522800F2D02D /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				5721711A237D52AD00F2D02D /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		57C410C3236FFDEB00748D16 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,6 +484,7 @@
 				57155F43236D697A00B0A523 /* YoutubeDataAPI */,
 				57F996FC2369EE96008AB6AA /* View */,
 				57155F77236E0CF600B0A523 /* Component */,
+				57217119237D522800F2D02D /* Constant */,
 				57217116237D507000F2D02D /* App */,
 				57F996CB2369D17B008AB6AA /* Assets.xcassets */,
 				57155F53236D893100B0A523 /* Main.storyboard */,
@@ -820,6 +831,7 @@
 				572170E4237CED7E00F2D02D /* VideoChannleView.swift in Sources */,
 				572170E8237CEDA700F2D02D /* VideoCommentTitleView.swift in Sources */,
 				57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */,
+				5721711B237D52AD00F2D02D /* Constant.swift in Sources */,
 				57C6E6182378197B003E3FC6 /* DefaultVideoCollectionCell.swift in Sources */,
 				572170EC237CEDFE00F2D02D /* VideoPlayerDefaultView.swift in Sources */,
 				57C6E624237B8E3F003E3FC6 /* ExCell.swift in Sources */,

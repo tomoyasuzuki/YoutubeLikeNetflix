@@ -36,7 +36,7 @@ extension SegmentSearchViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell", for: indexPath) as! VideoTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constant.VIDEO_TABLEVIEW_CELL, for: indexPath) as! VideoTableViewCell
         
         cell.view.configureDataSource(viewModel.videos[indexPath.row])
         return cell
@@ -58,7 +58,7 @@ extension SegmentSearchViewController {
     private func configureComponents() {
         view.backgroundColor = .black
         
-        tableView.register(VideoTableViewCell.self, forCellReuseIdentifier: "VideoTableViewCell")
+        tableView.register(VideoTableViewCell.self, forCellReuseIdentifier: Constant.VIDEO_TABLEVIEW_CELL)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 240

@@ -33,6 +33,8 @@ final class VideoDetailViewController: UIViewController {
     }
 }
 
+//MARK: TableViewDelegate
+
 extension VideoDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
@@ -51,7 +53,7 @@ extension VideoDetailViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constant.VIDEO_DETAIL_CELL, for: indexPath)
         
         guard let video = viewModel.video else { return cell }
         
@@ -91,9 +93,11 @@ extension VideoDetailViewController: UITableViewDelegate, UITableViewDataSource 
 
 extension VideoDetailViewController {
     private func configureComponents() {
-        tableView.register(VideoTableViewCell.self, forCellReuseIdentifier: "VideoTableViewCell")
+        view.backgroundColor = .black
+        
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = .clear
     }
     
     private func configureViewModel() {
