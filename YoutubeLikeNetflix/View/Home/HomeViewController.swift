@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Swinject
 import YoutubeKit
 
 final class HomeViewController: UIViewController {
@@ -31,14 +32,6 @@ final class HomeViewController: UIViewController {
         viewDidLoadSubject.onNext(())
     }
 }
-
-// MARK: tableCollectionViewDelegate
-
-extension HomeViewController {
-    
-}
-
-
 
 // MARK: CollectionViewDelegate
 
@@ -77,11 +70,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
-//MARK: ViewModel
+//MARK: Setup
 
 extension HomeViewController {
     private func configureViewModel() {
-        viewModel = AppDelegate.container.resolve(HomeViewModel.self)
+        viewModel = HomeViewModel(videoListApi: resolver.resolve(VideoListApi.self)!)
         
         let input = HomeViewModel.Input(viewDidLoad: viewDidLoadSubject.asSignal(onErrorSignalWith: Signal.empty()))
         
@@ -107,5 +100,14 @@ extension HomeViewController {
                 self.tableCollectionView.reloadData()
             })
             .disposed(by: disposeBag)
+    }
+}
+
+//MARK: DI
+
+extension HomeViewController {
+    private var resolver: Resolver {
+        let assembler = Assembler([HomeViewModelAssembly()])
+        return assembler.resolver
     }
 }

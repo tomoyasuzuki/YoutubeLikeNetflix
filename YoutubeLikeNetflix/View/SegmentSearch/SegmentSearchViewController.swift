@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import Swinject
 import RxCocoa
 
 class SegmentSearchViewController: UIViewController {
@@ -74,8 +75,8 @@ extension SegmentSearchViewController {
     }
     
     private func configureViewModel() {
-        viewModel = SegmentSearchViewModel(searchApi: VideoSearchApi(api: YoutubeDataApiClient()),
-        videoApi: VideoListApi(api: YoutubeDataApiClient()))
+        viewModel = SegmentSearchViewModel(searchApi: resolver.resolve(VideoSearchApi.self)!,
+                                           videoApi: resolver.resolve(VideoListApi.self)!)
         
         let input = SegmentSearchViewModel.Input(segmentChanged: segment.rx.value.asDriver(onErrorDriveWith: Driver.empty()))
         
@@ -99,5 +100,14 @@ extension SegmentSearchViewController {
     
     private func handleTableViewHidden(isHidden: Bool) {
         self.tableView.isHidden = isHidden
+    }
+}
+
+//MARK: DI
+
+extension SegmentSearchViewController {
+    private var resolver: Resolver {
+        let assembler = Assembler([SegmentSearchViewModelAssembly()])
+        return assembler.resolver
     }
 }

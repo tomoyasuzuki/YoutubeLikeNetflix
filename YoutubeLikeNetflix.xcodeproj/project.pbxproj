@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D15F038955582395DF3972B /* Pods_YoutubeLikeNetflixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B11FB9F47D1A99B8F0ADDF /* Pods_YoutubeLikeNetflixUITests.framework */; };
 		57155F45236D69BB00B0A523 /* YoutubeDataApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57155F44236D69BB00B0A523 /* YoutubeDataApiClient.swift */; };
-		57155F52236D76D900B0A523 /* YoutubeKitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57155F51236D76D900B0A523 /* YoutubeKitTestViewController.swift */; };
 		57155F55236D893100B0A523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57155F53236D893100B0A523 /* Main.storyboard */; };
-		57155F57236DED0200B0A523 /* ReponseErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57155F56236DED0200B0A523 /* ReponseErrorHandler.swift */; };
 		57155F5B236DED5C00B0A523 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57155F5A236DED5C00B0A523 /* ResponseError.swift */; };
 		57155F65236DF53C00B0A523 /* VideoListApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57155F64236DF53C00B0A523 /* VideoListApi.swift */; };
 		57155F80236E199D00B0A523 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57155F7F236E199D00B0A523 /* VideoCell.swift */; };
@@ -33,6 +31,10 @@
 		57217109237D3C6B00F2D02D /* ChannelListApiAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57217108237D3C6B00F2D02D /* ChannelListApiAssembly.swift */; };
 		5721710B237D3CEB00F2D02D /* VideoSearchApiAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721710A237D3CEB00F2D02D /* VideoSearchApiAssembly.swift */; };
 		5721710D237D3D2200F2D02D /* VideoListApiAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721710C237D3D2200F2D02D /* VideoListApiAssembly.swift */; };
+		57217111237D3DA000F2D02D /* VideoViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57217110237D3DA000F2D02D /* VideoViewModelAssembly.swift */; };
+		57217113237D434800F2D02D /* SegmentSearchViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57217112237D434800F2D02D /* SegmentSearchViewModelAssembly.swift */; };
+		57217115237D4E6D00F2D02D /* VideoSearchViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57217114237D4E6D00F2D02D /* VideoSearchViewModelAssembly.swift */; };
+		57217118237D50F100F2D02D /* HomeViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57217117237D50F100F2D02D /* HomeViewModelAssembly.swift */; };
 		57C410C5236FFE0100748D16 /* ExReactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C410C4236FFE0100748D16 /* ExReactive.swift */; };
 		57C410D023700AA800748D16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C410CF23700AA800748D16 /* HomeViewModel.swift */; };
 		57C410D323719DEA00748D16 /* VideoThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C410D123719DEA00748D16 /* VideoThumbnailCollectionViewCell.swift */; };
@@ -60,7 +62,6 @@
 		57E7834923757843008F8C7A /* ExString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E7834823757843008F8C7A /* ExString.swift */; };
 		57E7834B23758839008F8C7A /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E7834A23758839008F8C7A /* CollectionTableViewCell.swift */; };
 		57E7834D23759233008F8C7A /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E7834C23759232008F8C7A /* CollectionHeaderView.swift */; };
-		57E7834F23759B94008F8C7A /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E7834E23759B94008F8C7A /* SomeViewController.swift */; };
 		57E783542376F763008F8C7A /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E783532376F763008F8C7A /* PaddingLabel.swift */; };
 		57E783562376FC35008F8C7A /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E783552376FC35008F8C7A /* SubTitleLabel.swift */; };
 		57F996C32369D179008AB6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F996C22369D179008AB6AA /* AppDelegate.swift */; };
@@ -100,9 +101,7 @@
 		132703E439226C8E042C46BD /* Pods-YoutubeLikeNetflixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeLikeNetflixTests.release.xcconfig"; path = "Target Support Files/Pods-YoutubeLikeNetflixTests/Pods-YoutubeLikeNetflixTests.release.xcconfig"; sourceTree = "<group>"; };
 		2622ABEAFA84394C6BFE69AE /* Pods_YoutubeLikeNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeLikeNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57155F44236D69BB00B0A523 /* YoutubeDataApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDataApiClient.swift; sourceTree = "<group>"; };
-		57155F51236D76D900B0A523 /* YoutubeKitTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeKitTestViewController.swift; sourceTree = "<group>"; };
 		57155F54236D893100B0A523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YoutubeLikeNetflix/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		57155F56236DED0200B0A523 /* ReponseErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReponseErrorHandler.swift; sourceTree = "<group>"; };
 		57155F5A236DED5C00B0A523 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		57155F64236DF53C00B0A523 /* VideoListApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListApi.swift; sourceTree = "<group>"; };
 		57155F7F236E199D00B0A523 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
@@ -124,6 +123,10 @@
 		57217108237D3C6B00F2D02D /* ChannelListApiAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListApiAssembly.swift; sourceTree = "<group>"; };
 		5721710A237D3CEB00F2D02D /* VideoSearchApiAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSearchApiAssembly.swift; sourceTree = "<group>"; };
 		5721710C237D3D2200F2D02D /* VideoListApiAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListApiAssembly.swift; sourceTree = "<group>"; };
+		57217110237D3DA000F2D02D /* VideoViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModelAssembly.swift; sourceTree = "<group>"; };
+		57217112237D434800F2D02D /* SegmentSearchViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentSearchViewModelAssembly.swift; sourceTree = "<group>"; };
+		57217114237D4E6D00F2D02D /* VideoSearchViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSearchViewModelAssembly.swift; sourceTree = "<group>"; };
+		57217117237D50F100F2D02D /* HomeViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelAssembly.swift; sourceTree = "<group>"; };
 		57C410C4236FFE0100748D16 /* ExReactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExReactive.swift; sourceTree = "<group>"; };
 		57C410CF23700AA800748D16 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		57C410D123719DEA00748D16 /* VideoThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -151,7 +154,6 @@
 		57E7834823757843008F8C7A /* ExString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExString.swift; sourceTree = "<group>"; };
 		57E7834A23758839008F8C7A /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		57E7834C23759232008F8C7A /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
-		57E7834E23759B94008F8C7A /* SomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
 		57E783532376F763008F8C7A /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		57E783552376FC35008F8C7A /* SubTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLabel.swift; sourceTree = "<group>"; };
 		57F996BF2369D179008AB6AA /* YoutubeLikeNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeLikeNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				57155F5A236DED5C00B0A523 /* ResponseError.swift */,
-				57155F56236DED0200B0A523 /* ReponseErrorHandler.swift */,
 			);
 			name = ResponseError;
 			sourceTree = "<group>";
@@ -289,6 +290,7 @@
 			children = (
 				57F996C62369D179008AB6AA /* HomeViewController.swift */,
 				57C410CF23700AA800748D16 /* HomeViewModel.swift */,
+				57217117237D50F100F2D02D /* HomeViewModelAssembly.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -298,6 +300,7 @@
 			children = (
 				57F996F62369E6C7008AB6AA /* VideoSearchViewController.swift */,
 				57C6E61F23794675003E3FC6 /* VideoSearchViewModel.swift */,
+				57217114237D4E6D00F2D02D /* VideoSearchViewModelAssembly.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			children = (
 				57C6E62C237CE7EA003E3FC6 /* VideoDetailViewController.swift */,
 				572170FC237D2D5500F2D02D /* VideoDetailViewModel.swift */,
+				57217110237D3DA000F2D02D /* VideoViewModelAssembly.swift */,
 			);
 			path = VideoDetail;
 			sourceTree = "<group>";
@@ -358,6 +362,15 @@
 			path = CommentList;
 			sourceTree = "<group>";
 		};
+		57217116237D507000F2D02D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				57F996C22369D179008AB6AA /* AppDelegate.swift */,
+				57F996C42369D179008AB6AA /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		57C410C3236FFDEB00748D16 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +418,7 @@
 			children = (
 				57C6E626237BA165003E3FC6 /* SegmentSearchViewController.swift */,
 				57C6E628237BA173003E3FC6 /* SegmentSearchViewModel.swift */,
+				57217112237D434800F2D02D /* SegmentSearchViewModelAssembly.swift */,
 			);
 			path = SegmentSearch;
 			sourceTree = "<group>";
@@ -460,10 +474,7 @@
 				57155F43236D697A00B0A523 /* YoutubeDataAPI */,
 				57F996FC2369EE96008AB6AA /* View */,
 				57155F77236E0CF600B0A523 /* Component */,
-				57F996C22369D179008AB6AA /* AppDelegate.swift */,
-				57E7834E23759B94008F8C7A /* SomeViewController.swift */,
-				57F996C42369D179008AB6AA /* SceneDelegate.swift */,
-				57155F51236D76D900B0A523 /* YoutubeKitTestViewController.swift */,
+				57217116237D507000F2D02D /* App */,
 				57F996CB2369D17B008AB6AA /* Assets.xcassets */,
 				57155F53236D893100B0A523 /* Main.storyboard */,
 				57F996CD2369D17B008AB6AA /* LaunchScreen.storyboard */,
@@ -778,7 +789,6 @@
 				57E7834123756F62008F8C7A /* ExInt.swift in Sources */,
 				57C6E62023794675003E3FC6 /* VideoSearchViewModel.swift in Sources */,
 				572170FD237D2D5500F2D02D /* VideoDetailViewModel.swift in Sources */,
-				57155F52236D76D900B0A523 /* YoutubeKitTestViewController.swift in Sources */,
 				57155F45236D69BB00B0A523 /* YoutubeDataApiClient.swift in Sources */,
 				57C6E6092377CF07003E3FC6 /* VideoTableViewCell.swift in Sources */,
 				57F996C72369D179008AB6AA /* HomeViewController.swift in Sources */,
@@ -786,7 +796,9 @@
 				57E7834D23759233008F8C7A /* CollectionHeaderView.swift in Sources */,
 				57C6E6072377CE0D003E3FC6 /* VideoDefaultView.swift in Sources */,
 				57E783542376F763008F8C7A /* PaddingLabel.swift in Sources */,
+				57217113237D434800F2D02D /* SegmentSearchViewModelAssembly.swift in Sources */,
 				57C410D323719DEA00748D16 /* VideoThumbnailCollectionViewCell.swift in Sources */,
+				57217118237D50F100F2D02D /* HomeViewModelAssembly.swift in Sources */,
 				57E7834723757346008F8C7A /* VideoFooterView.swift in Sources */,
 				57C6E62B237BE031003E3FC6 /* ChannelListApi.swift in Sources */,
 				57155F65236DF53C00B0A523 /* VideoListApi.swift in Sources */,
@@ -801,9 +813,9 @@
 				57C6E6162377E1B6003E3FC6 /* CustomHeaderContainerView.swift in Sources */,
 				57C6E61E23785F2D003E3FC6 /* ViewController.swift in Sources */,
 				57E7834923757843008F8C7A /* ExString.swift in Sources */,
+				57217115237D4E6D00F2D02D /* VideoSearchViewModelAssembly.swift in Sources */,
 				57C6E61A23782D60003E3FC6 /* CollectionContainerCell.swift in Sources */,
 				5721710D237D3D2200F2D02D /* VideoListApiAssembly.swift in Sources */,
-				57E7834F23759B94008F8C7A /* SomeViewController.swift in Sources */,
 				572170EA237CEDD300F2D02D /* VideoDescriptionView.swift in Sources */,
 				572170E4237CED7E00F2D02D /* VideoChannleView.swift in Sources */,
 				572170E8237CEDA700F2D02D /* VideoCommentTitleView.swift in Sources */,
@@ -812,7 +824,6 @@
 				572170EC237CEDFE00F2D02D /* VideoPlayerDefaultView.swift in Sources */,
 				57C6E624237B8E3F003E3FC6 /* ExCell.swift in Sources */,
 				57C6E60D2377D421003E3FC6 /* PaddingButton.swift in Sources */,
-				57155F57236DED0200B0A523 /* ReponseErrorHandler.swift in Sources */,
 				57217109237D3C6B00F2D02D /* ChannelListApiAssembly.swift in Sources */,
 				57155F80236E199D00B0A523 /* VideoCell.swift in Sources */,
 				57C6E629237BA173003E3FC6 /* SegmentSearchViewModel.swift in Sources */,
@@ -824,6 +835,7 @@
 				57C6E60B2377D29B003E3FC6 /* TableHeaderView.swift in Sources */,
 				57155F5B236DED5C00B0A523 /* ResponseError.swift in Sources */,
 				5721710B237D3CEB00F2D02D /* VideoSearchApiAssembly.swift in Sources */,
+				57217111237D3DA000F2D02D /* VideoViewModelAssembly.swift in Sources */,
 				57C410D023700AA800748D16 /* HomeViewModel.swift in Sources */,
 				57F996C52369D179008AB6AA /* SceneDelegate.swift in Sources */,
 				57C6E62D237CE7EB003E3FC6 /* VideoDetailViewController.swift in Sources */,

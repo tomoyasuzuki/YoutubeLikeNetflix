@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Swinject
 import YoutubeKit
 
 enum Segment: Int {
@@ -87,8 +88,8 @@ extension VideoSearchViewController {
     }
     
     private func configureViewModel() {
-        viewModel = VideoSearchViewModel(searchApi: VideoSearchApi(api: YoutubeDataApiClient()),
-                                         videoApi: VideoListApi(api: YoutubeDataApiClient()))
+        viewModel = VideoSearchViewModel(searchApi: resolver.resolve(VideoSearchApi.self)!,
+                                         videoApi: resolver.resolve(VideoListApi.self)!)
         
         let input = VideoSearchViewModel.Input(texDidChange: self.searchBar.rx.text.orEmpty.asDriver(onErrorDriveWith: Driver.empty()))
         
@@ -111,5 +112,14 @@ extension VideoSearchViewController {
     
     private func handleTableViewHidden(isHidden: Bool) {
         self.tableView.isHidden = isHidden
+    }
+}
+
+//MARK: DI
+
+extension VideoSearchViewController {
+    private var resolver: Resolver {
+        let assembler = Assembler([VideoSearchViewModelAssembly()])
+        return assembler.resolver
     }
 }

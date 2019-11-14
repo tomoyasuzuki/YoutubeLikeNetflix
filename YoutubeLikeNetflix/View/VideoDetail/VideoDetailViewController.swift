@@ -8,12 +8,14 @@
 
 import RxSwift
 import RxCocoa
+import Swinject
 import YoutubeKit
 
 final class VideoDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var viewModel: VideoDetailViewModel!
+    private let disposeBag = DisposeBag()
     
     private var video: Video?
     private let _video = PublishSubject<Video>()
@@ -22,7 +24,7 @@ final class VideoDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        configureViewModel()
         configureComponents()
         
         guard let video = self.video else { return }
@@ -95,8 +97,28 @@ extension VideoDetailViewController {
     }
     
     private func configureViewModel() {
-        viewModel = VideoDetailViewModel(channelApi: ChannelListApi(api: YoutubeDataApiClient()), commentListApi: CommentListAPi(api: YoutubeDataApiClient()))
+        viewModel = VideoDetailViewModel(channelApi: resolver.resolve(ChannelListApi.self)!,
+                                         commentListApi: resolver.resolve(CommentListAPi.self)!)
         
-        let input = VideoDetailViewModel.Input(viewDidLoad: self._viewDidLoad.asDriverWithEmpty())
+        let input = VideoDetailViewModel.Input(viewDidLoad: self._viewDidLoad.asDriverWithEmpty(),
+                                               _video: self._video.asDriverWithEmpty())
+        
+        let output = viewModel.build(input)
+        
+        output
+            .reload
+            .drive(onNext: {[weak self] _ in
+                self?.tableView.reloadData()
+            }).disposed(by: disposeBag)
+        
+    }
+}
+
+//MARK: DI
+
+extension VideoDetailViewController {
+    private var resolver: Resolver {
+        let assembler = Assembler([VideoDetailViewModelAssembly()])
+        return assembler.resolver
     }
 }

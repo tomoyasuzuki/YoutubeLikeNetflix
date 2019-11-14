@@ -32,10 +32,13 @@ final class VideoDetailViewModel {
         let reload: Driver<Void>
     }
     
-    func build(_ input: Input) {
+    func build(_ input: Input) -> Output {
         let video = input
             ._video.do(onNext: { self.video = $0 })
         
         // video情報を元にコメントAPI, チャンネルAPIを叩く
+        return Output(reload: Driver.empty())
     }
 }
+
+
