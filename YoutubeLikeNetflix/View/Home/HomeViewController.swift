@@ -12,138 +12,100 @@ import RxCocoa
 import YoutubeKit
 
 final class HomeViewController: UIViewController {
-    @IBOutlet weak var videoTableView: UITableView!
+    @IBOutlet weak var tableCollectionView: UICollectionView!
     
-    private var action: HomeActionCreator!
-    private var videoStore: CategorizedVideosStore!
-    private var initialStore: HomeInitialStore!
-    
-    private var videos: [[Video]]!
-    private var section: Int = 0
-    
+    private var viewModel: HomeViewModel!
     private let disposeBag = DisposeBag()
+    
+    private var viewDidLoadSubject = PublishSubject<Void>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureStore()
-        configureAction()
+        tableCollectionView.register(DefaultVideoCollectionCell.self, forCellWithReuseIdentifier: "DefaultVideoCollectionCell")
         
-        videoTableView.register(UINib(nibName: "VideoCollectionTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoCollectionTableViewCell")
+        tableCollectionView.delegate = self
+        tableCollectionView.dataSource = self
+
+        configureViewModel()
+        viewDidLoadSubject.onNext(())
     }
 }
+
+// MARK: tableCollectionViewDelegate
+
+extension HomeViewController {
+    
+}
+
+
 
 // MARK: CollectionViewDelegate
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        var count = 0
+        
+        switch collectionView.tag {
+        case 0:
+            count = viewModel.animeVideoList.count
+        case 1:
+            count = viewModel.musicVideoList.count
+        case 2:
+            count = viewModel.sportsVideoList.count
+        default:
+            break
+        }
+        
+        return count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoCell", for: indexPath) as! VideoCell
-        cell.layer.cornerRadius = 15.0
-        cell.clipsToBounds = true
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoCollectionCell", for: indexPath) as! VideoCollectionCell
         
-        guard let videos = self.videos, videos.count > 0 else {
-            return cell
+        switch collectionView.tag {
+        case 0:
+            cell.configureDataSource(source: viewModel.animeVideoList[indexPath.row])
+        case 1:
+            cell.configureDataSource(source: viewModel.musicVideoList[indexPath.row])
+        case 2:
+            cell.configureDataSource(source: viewModel.sportsVideoList[indexPath.row])
+        default:
+            break
         }
-        
-        cell.bind(videos[section][indexPath.row])
-
         return cell
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-    }
 }
 
-// MARK: TableviewDelegate
-
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
-        guard let cell = cell as? VideoCollectionTableViewCell else { return }
-
-        cell.setCollectionViewDatasourceAndDelegate(self, forRow: indexPath.row)
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCollectionTableViewCell", for: indexPath) as! VideoCollectionTableViewCell
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-       let headerView = UIView(frame: CGRect(x: 10, y: 10, width: tableView.frame.width, height: 50))
-        
-        headerView.backgroundColor = .black
-        
-        let label = UILabel(frame: CGRect(x: 8, y: 8, width: 100, height: 30))
-        
-        label.text = "HeaderTitle"
-        label.textColor = .white
-        headerView.addSubview(label)
-        return headerView
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        tableView.estimatedRowHeight = 300
-        return UITableView.automaticDimension
-        
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
-    }
-}
-
-//MARK: Store
+//MARK: ViewModel
 
 extension HomeViewController {
-    private func configureStore() {
-        videoStore = AppDelegate.container.resolve(CategorizedVideosStore.self)
-        initialStore = AppDelegate.container.resolve(HomeInitialStore.self)
+    private func configureViewModel() {
+        viewModel = AppDelegate.container.resolve(HomeViewModel.self)
         
-        videoStore
-            .videosList
-            .asDriver(onErrorDriveWith: Driver.empty())
-            .drive(onNext: { [weak self] videoLists in
-                self?.videos = videoLists.map { $0.list.items }
-                self?.videoTableView.reloadData()
+        let input = HomeViewModel.Input(viewDidLoad: viewDidLoadSubject.asSignal(onErrorSignalWith: Signal.empty()))
+        
+        let output = viewModel.build(input)
+        
+        output
+        .reloadAnime
+            .drive(onNext: { _ in
+                self.tableCollectionView.reloadData()
             })
             .disposed(by: disposeBag)
         
-        initialStore
-            .initialState
-            .subscribe(onNext: { initialState in
-                <#code#>
+        output
+        .reloadMusic
+            .drive(onNext: { _ in
+                self.tableCollectionView.reloadData()
             })
             .disposed(by: disposeBag)
-    }
-}
-
-//MARK: Action
-
-extension HomeViewController {
-    private func configureAction() {
-        action = AppDelegate.container.resolve(HomeActionCreator.self)
         
-        action
-            .fetchCategorizedVideos(rx.viewWillAppear.asObservable())
-            .subscribe(onNext: { _ in
-                print("Did fetchCategorizedVideos")
+        output
+        .reloadSports
+            .drive(onNext: { _ in
+                self.tableCollectionView.reloadData()
             })
             .disposed(by: disposeBag)
     }
 }
-

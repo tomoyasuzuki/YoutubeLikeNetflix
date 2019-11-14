@@ -25,7 +25,7 @@ final class VideoListApi {
                                videoCategoryID: String? = nil) -> Single<VideoList> {
         
         return api
-            .call(VideoListRequest(part: part, filter: filter))
+            .call(VideoListRequest(part: part, filter: filter, maxResults: maxResults,regionCode: regionCode, videoCategoryID: videoCategoryID))
             .map { try! JSONDecoder().decode(VideoList.self, from: $0)}
     }
 }

@@ -1,45 +1,35 @@
 //
-//  VideoSearchViewController.swift
+//  SegmentSearchViewController.swift
 //  YoutubeLikeNetflix
 //
-//  Created by 鈴木友也 on 2019/10/31.
+//  Created by 鈴木友也 on 2019/11/13.
 //  Copyright © 2019 tomoya.suzuki. All rights reserved.
 //
 
 import UIKit
 import RxSwift
 import RxCocoa
-import YoutubeKit
 
-enum Segment: Int {
-    case music = 0
-    case game = 1
-    case news = 2
-    case anime = 3
-}
-
-final class VideoSearchViewController: UIViewController {
+class SegmentSearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var segment: UISegmentedControl!
     
-    private var viewModel: VideoSearchViewModel!
+    private var viewModel: SegmentSearchViewModel!
     private let disposeBag = DisposeBag()
     
     private let indicator = UIActivityIndicatorView()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         configureViewModel()
-        configureComponetns()
+        configureComponents()
     }
 }
 
-// MARK: TableViewDelegate
+//MARK: TableViewDelegate
 
-extension VideoSearchViewController: UITableViewDelegate, UITableViewDataSource {
+extension SegmentSearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.videos.count
     }
@@ -61,10 +51,10 @@ extension VideoSearchViewController: UITableViewDelegate, UITableViewDataSource 
     }
 }
 
-// MARK: Setup
+//MARK: Setup
 
-extension VideoSearchViewController {
-    private func configureComponetns() {
+extension SegmentSearchViewController {
+    private func configureComponents() {
         view.backgroundColor = .black
         
         tableView.register(VideoTableViewCell.self, forCellReuseIdentifier: "VideoTableViewCell")
@@ -73,11 +63,8 @@ extension VideoSearchViewController {
         tableView.estimatedRowHeight = 240
         tableView.backgroundColor = .clear
         
-        searchBar.backgroundColor = .black
-        searchBar.alpha = 0.8
-        searchBar.barTintColor = .black
-        searchBar.searchTextField.textColor = .white
-        searchBar.searchTextField.borderStyle = .roundedRect
+        segment.backgroundColor = .white
+        segment.tintColor = .black
         
         indicator.center = view.center
         indicator.style = .large
@@ -87,10 +74,10 @@ extension VideoSearchViewController {
     }
     
     private func configureViewModel() {
-        viewModel = VideoSearchViewModel(searchApi: VideoSearchApi(api: YoutubeDataApiClient()),
-                                         videoApi: VideoListApi(api: YoutubeDataApiClient()))
+        viewModel = SegmentSearchViewModel(searchApi: VideoSearchApi(api: YoutubeDataApiClient()),
+        videoApi: VideoListApi(api: YoutubeDataApiClient()))
         
-        let input = VideoSearchViewModel.Input(texDidChange: self.searchBar.rx.text.orEmpty.asDriver(onErrorDriveWith: Driver.empty()))
+        let input = SegmentSearchViewModel.Input(segmentChanged: segment.rx.value.asDriver(onErrorDriveWith: Driver.empty()))
         
         let output = viewModel.build(input)
         
@@ -107,6 +94,7 @@ extension VideoSearchViewController {
                 
                 isLoading ? self?.indicator.startAnimating() : self?.indicator.stopAnimating()
             }).disposed(by: disposeBag)
+        
     }
     
     private func handleTableViewHidden(isHidden: Bool) {

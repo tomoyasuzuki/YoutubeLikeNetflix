@@ -13,18 +13,19 @@ final class VideoCollectionTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
-        videoCollectionView.register(VideoCell.self, forCellWithReuseIdentifier: "VideoCell")
+        videoCollectionView.register(VideoCollectionCell.self, forCellWithReuseIdentifier: "VideoCollectionCell")
+        
+        videoCollectionView.backgroundColor = .black
+        videoCollectionView.isScrollEnabled = true
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 375, height: 237)
-        layout.minimumLineSpacing = 20
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 10
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
         layout.scrollDirection = .horizontal
         videoCollectionView.collectionViewLayout = layout
-        
-        videoCollectionView.backgroundColor = .white
-        videoCollectionView.isScrollEnabled = true
     }
 }
 
@@ -34,5 +35,9 @@ extension VideoCollectionTableViewCell {
         videoCollectionView.delegate = source
         
         videoCollectionView.reloadData()
+    }
+    
+    func bindTag(tag: Int) {
+        videoCollectionView.tag = tag
     }
 }

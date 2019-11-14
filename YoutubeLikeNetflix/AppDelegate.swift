@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YoutubeKit
 import Swinject
 
 @UIApplicationMain
@@ -20,25 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         container.register(VideoListApi.self) { r in VideoListApi(api: r.resolve(YoutubeDataApiClient.self)!)}
         
-        container.register(Dispatcher.self) { _ in Dispatcher() }.inObjectScope(.container)
-        
         container.register(VideoCategoryListApi.self) { r in VideoCategoryListApi(api: r.resolve(YoutubeDataApiClient.self)!)}
         
-        container.register(HomeActionCreator.self) { r in
-            HomeActionCreator(videoListApi: r.resolve(VideoListApi.self)!, videoCategoryListApi: r.resolve(VideoCategoryListApi.self)!, dispatcher: r.resolve(Dispatcher.self)!)}
         
-        container.register(CategorizedVideosStore.self) { r in CategorizedVideosStore(dispatcher: r.resolve(Dispatcher.self)!)}
-        
-        container.register(HomeInitialStore.self) { r in HomeInitialStore(dispatcher: r.resolve(Dispatcher.self)!)}
+        container.register(HomeViewModel.self) { r in HomeViewModel(videoListApi: r.resolve(VideoListApi.self)!)}
         
         return container
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: YoutubeKitTestViewController())
-        window?.makeKeyAndVisible()
+        YoutubeKit.shared.setAPIKey("AIzaSyAEPf7ECV1oqdTuGnUzOrRa9TgShnIFJxY")
         return true
     }
 }
